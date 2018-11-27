@@ -1,0 +1,13 @@
+---
+title: "English Word Initals Analysis"
+author: "Figali Taho"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document:
+    keep_md: yes
+---
+I computed the frequency of all words starting with any of the 26 letters of the alphabet. 
+
+Here is a histogram showing what letter the words start with in the english language. 
+
+![*Fig. 1* A histogram of English word initials.](initials.png)
