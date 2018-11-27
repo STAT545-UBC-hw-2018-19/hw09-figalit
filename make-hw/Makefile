@@ -5,10 +5,10 @@ histogram: report.html
 initials: initials.html
 
 clean:
-	rm -f words.txt histogram.tsv histogram.png report.md report.html initials.csv initials.png initials.md initials.html
+	rm -f words.txt initialsAnalysisWords.txt histogram.tsv histogram.png report.md report.html initials.csv initials.png initials.md initials.html
 
 clean_initials:
-	rm -f words.txt initials.csv initials.png initials.md initials.html
+	rm -f initialsAnalysisWords.txt initials.csv initials.png initials.md initials.html
 
 clean_histogram:
 	rm -f words.txt histogram.tsv histogram.png report.md report.html
@@ -30,11 +30,14 @@ initials.png: initials.csv
 	Rscript -e 'library(ggplot2); ggplot(data=read.csv(file="$<", header=TRUE, sep=","), aes(x=Letter, y=Freq)) + geom_bar(stat="identity", fill="steelblue") + theme_minimal(); ggsave("$@")'
 	rm Rplots.pdf
 
-initials.csv: countinitials.R words.txt
+initials.csv: countinitials.R initialsAnalysisWords.txt
 	Rscript $<
-
-greaterThanWords.txt: /usr/share/dict/words 8
 	
+initialsAnalysisWords.txt: KeepGreaterThanK.py 
+	python3 $< -p /usr/share/dict/words -o $@ -k 2 
+	# setting k to 0 is equivalent to using words.txt
+	# used k as 2 as homework constant
+
 words.txt: /usr/share/dict/words
 	cp $< $@
 
