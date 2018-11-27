@@ -19,7 +19,8 @@ Here are some links to other important changes I made as the homework requested,
 | Added Rmd [file](https://github.com/STAT545-UBC-students/hw09-figalit/blob/master/make-hw/initials.rmd) to wvisualize a histogram plot of this data | 👍 |
 | Added python [script](https://github.com/STAT545-UBC-students/hw09-figalit/blob/master/make-hw/KeepGreaterThanK.py) to filter out words less than a parameter k | 👍 |
 | Modified [Makefile](https://github.com/STAT545-UBC-students/hw09-figalit/blob/master/make-hw/Makefile) to reflect changes | 👍 |
-|  |nalysis is about counting what wordsletter  start with, and visualizing that in a nice histogram plot.
+| ||n
+alysis is about counting what wordsletter  start with, and visualizing that in a nice histogram plot.
 
 I have also added a python script that filters out words greater than an arbitrary value `k`, which is currently 2 for this analysis. 
 
