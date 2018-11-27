@@ -12,6 +12,7 @@ The commit history of this repository reflects what a student might do as she wo
     - run snippets of R code
     - run an entire R script
     - render an R Markdown document (or R script)
+    - run a Python script and incorporate it into the make activity for analysis
   * The interface between RStudio and `make`
   * How to use `make` from the shell
   * How Git facilitates the process of building a pipeline
