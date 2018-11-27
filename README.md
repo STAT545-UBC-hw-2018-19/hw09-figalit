@@ -16,12 +16,10 @@ Here are some links to other important changes I made as the homework requested,
 | **Description**  | **Status** |
 |------------------|------------|
 | Added R [script](https://github.com/STAT545-UBC-students/hw09-figalit/blob/master/make-hw/countinitials.R) to write a csv file that shows the frequncy of words starting with any of the 26 letters. | 👍 |
-| Added Rmd [file](https://github.com/STAT545-UBC-students/hw09-figalit/blob/master/make-hw/initials.rmd) to write a csv file that shows the frequncy of words starting with any of the 26 letters. | 👍 |
+| Added Rmd [file](https://github.com/STAT545-UBC-students/hw09-figalit/blob/master/make-hw/initials.rmd) to wvisualize a histogram plot of this data | 👍 |
 | Added python [script](https://github.com/STAT545-UBC-students/hw09-figalit/blob/master/make-hw/KeepGreaterThanK.py) to filter out words less than a parameter k | 👍 |
 | Modified [Makefile](https://github.com/STAT545-UBC-students/hw09-figalit/blob/master/make-hw/Makefile) to reflect changes | 👍 |
-|  | 👍 |
-
-My analysis is about counting what words start with, and visualizing that in a nice histogram plot.
+|  |nalysis is about counting what wordsletter  start with, and visualizing that in a nice histogram plot.
 
 I have also added a python script that filters out words greater than an arbitrary value `k`, which is currently 2 for this analysis. 
 
